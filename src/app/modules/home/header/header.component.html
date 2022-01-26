@@ -1,0 +1,22 @@
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5 ps-4" routerLink="active">
+            <img src="../../../../assets/images/logo.PNG" alt="" width="30" height="24">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link me-5" routerLink="active">HOME</a>
+          <a class="nav-link me-5" routerLink='products'>PRODUCTS</a>
+          <a class="nav-link" routerLink="discover">DISCOVER</a>
+        </div>
+        <div class="side">
+            <span class="material-icons-outlined me-3">search</span>
+            <span class="material-icons-outlined">shopping_cart</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
