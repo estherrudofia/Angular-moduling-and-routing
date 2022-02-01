@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from 'src/app/services/post.service';
 
 @Component({
   selector: 'app-items',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private teapot: PostService) { }
 
-  ngOnInit(): void {
-  }
+    teapots: any = [];
+
+    ngOnInit(): void {
+      this.getSection();
+    }
+  
+    getSection() {
+      this.teapot.get().subscribe(data => {
+        this.teapots = data;
+        console.log(this.teapots);
+        
+      })
+    }
 
 }

@@ -1,9 +1,9 @@
-<div class="d-flex justify-content-center">
-    <div class="card align-items-center" style="width:300px">
-        <img class="card-img-top" src="/assets/images/11.png" alt="Card image">
+<div class="d-flex flex-wrap justify-content-center">
+    <div class="card align-items-center" style="width:300px; height:200px" *ngFor="let teapot of teapots">
+        <img class="card-img-top" src={{teapot.image}} alt="Card image">
         <div class="card-body">
-          <h4 class="card-title">Medium coffee pot</h4>
-          <p class="card-text">Some example text.</p>
+          <h4 class="card-title">{{teapot.title}}</h4>
+          <p class="card-text">{{teapot.paragraph}}</p>
         </div>
     </div>
 
@@ -23,12 +23,12 @@
         </div>
     </div>
 
-    <div class="card align-items-center" style="width:300px">
+    <!-- <div class="card align-items-center" style="width:300px">
         <img class="card-img-top" src="/assets/images/12.png" alt="Card image">
         <div class="card-body">
           <h4 class="card-title">Frangipani</h4>
           <p class="card-text">Some example text.</p>
         </div>
-    </div>
+    </div> -->
 
 </div>

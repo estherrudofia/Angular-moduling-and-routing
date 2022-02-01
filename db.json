@@ -1,0 +1,54 @@
+{
+    "kettles": [
+        {
+            "title": "teapot1",
+            "image": "assets/images/11.png",
+            "paragraph": "Lorem ipsum dolor"
+        },
+        {
+            "title": "teapot2",
+            "image": "assets/images/12.png",
+            "paragraph": "Lorem ipsum dolor"
+        },
+        {
+            "title": "teapot3",
+            "image": "assets/images/13.png",
+            "paragraph": "Lorem ipsum dolor"
+        },
+        {
+            "title": "teapot4",
+            "image": "assets/images/14.png",
+            "paragraph": "Lorem ipsum dolor"
+        },
+        {
+            "title": "teapot5",
+            "image": "assets/images/15.png",
+            "paragraph": "Lorem ipsum dolor"
+        },
+        {
+            "title": "teapot1",
+            "image": "assets/images/11.png",
+            "paragraph": "Lorem ipsum dolor"
+        },
+        {
+            "title": "teapot2",
+            "image": "assets/images/12.png",
+            "paragraph": "Lorem ipsum dolor"
+        },
+        {
+            "title": "teapot3",
+            "image": "assets/images/13.png",
+            "paragraph": "Lorem ipsum dolor"
+        },
+        {
+            "title": "teapot4",
+            "image": "assets/images/14.png",
+            "paragraph": "Lorem ipsum dolor"
+        },
+        {
+            "title": "teapot5",
+            "image": "assets/images/15.png",
+            "paragraph": "Lorem ipsum dolor"
+        }
+    ]
+}

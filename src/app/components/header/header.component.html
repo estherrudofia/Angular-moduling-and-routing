@@ -8,9 +8,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link me-5" aria-current="page" routerLink="active">HOME</a>
-          <a class="nav-link me-5" routerLink='products'>PRODUCTS</a>
-          <a class="nav-link" routerLink="discover">DISCOVER</a>
+          <a class="nav-link me-5" aria-current="page" routerLink="/" routerLinkActive="font-semibold" [routerLinkActiveOptions]="{ exact: true }">HOME</a>
+          <a class="nav-link me-5" routerLink='/products' routerLinkActive="font-semibold" [routerLinkActiveOptions]="{ exact: true }">PRODUCTS</a>
+          <a class="nav-link" routerLink="/discover" routerLinkActive="font-semibold" [routerLinkActiveOptions]="{ exact: true }">DISCOVER</a>
         </div>
         <div class="side">
             <span class="material-icons-outlined me-3">search</span>

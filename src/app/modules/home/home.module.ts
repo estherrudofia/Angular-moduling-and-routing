@@ -2,25 +2,25 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { HeaderComponent } from './header/header.component';
+// import { HeaderComponent } from '../../components/header/header.component';
 import { CardComponent } from './card/card.component';
 import { SectionComponent } from './section/section.component';
-import { FooterComponent } from './footer/footer.component';
+// import { FooterComponent } from '../../components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
-    HeaderComponent,
+    // HeaderComponent,
     CardComponent,
     SectionComponent,
-    FooterComponent
+    // FooterComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule
   ],
   exports: [
-    HeaderComponent
+    CardComponent
   ]
 })
 export class HomeModule { }
