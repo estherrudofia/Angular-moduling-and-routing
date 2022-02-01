@@ -1,19 +1,6 @@
 <div class="d-flex justify-content-center">
-    <!-- <div class="card align-items-center" style="width:400px">
-        <img class="card-img-bottom" src="/assets/images/15.png" alt="Card image">
-        <div class="card-body">
-          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ipsa aliquam non nihil provident tenetur unde fugit, error quos, consequuntur asperiores iure quo voluptas dolor, velit accusantium <br> Temporibus, iure saepe.</p>
-        </div>
-    </div>
-
-    <div class="card align-items-center" style="width:400px">
-        <img class="card-img-bottom" src="/assets/images/15.png" alt="Card image">
-        <div class="card-body">
-          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ipsa aliquam non nihil provident tenetur unde fugit, error quos, consequuntur asperiores iure quo voluptas dolor, velit accusantium <br> Temporibus, iure saepe.</p>
-        </div>
-    </div> -->
     
-    <form class="mb-5" [formGroup]='submitForm'  (ngSubmit)="onSubmit()">
+    <form class="mb-5" [formGroup]='submitForm'  (ngSubmit)="sendPost()">
       <div class="mb-4">
         <label for="inputEmail" class="form-label">Email address</label>
         <input type="email" class="form-control" id="inputEmail" formControlName="inputEmail" aria-describedby="emailHelp">

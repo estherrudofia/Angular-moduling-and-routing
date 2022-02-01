@@ -34,7 +34,7 @@ export class MainComponent implements OnInit {
 
   onSubmit(): void {
     this.sendPost();
-      console.warn('Your order has been submitted', this.submitForm.value);
+      console.warn('Your email has been submitted', this.submitForm.value);
       this.submitForm.reset();
     }
 
