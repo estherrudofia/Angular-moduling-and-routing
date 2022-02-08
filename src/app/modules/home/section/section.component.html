@@ -1,13 +1,9 @@
+
 <br>
 <div class="d-flex flex-wrap justify-content-center text-center" >
-    <div class="card align-items-center" style="min-width:250px; min-height:300px" *ngFor="let teapot of teapots">
-        <img class="card-img-top w-50" [src]="teapot.image" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">{{teapot.title}}</h4>
-          <p class="card-text text-center">{{teapot.paragraph}}</p>
-        </div>
-    </div>
-
+  <div class="card align-items-center" style="width:250px;" *ngFor="let post of posts">
+    <app-post [post]="post" ></app-post>
+    <br>
+  </div>
 </div>
-
 

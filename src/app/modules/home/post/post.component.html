@@ -1,0 +1,21 @@
+<!-- <img class="card-img-top w-50" [src]="post.image" alt="Card image"> -->
+<div class="card-body">
+    <h4 class="card-title">{{post.name}}</h4>
+    <p class="card-text text-center">{{post.body}}</p>
+    <div>
+        
+        <h4 *ngIf="toggleForm">Email:</h4>
+        <p>{{values}}</p>
+    </div>
+</div>
+<form  *ngIf="toggleForm">
+    <input type="email"  class="text-center" placeholder="Your E-mail here" [(ngModel)]="emailForm.email" name="email" > <br>
+    <button class="btn" type="button" (click)="save()"> Save </button>
+    <!-- <button class="btn ">Cancel</button> -->
+</form><br><br>
+<div class="d-flex justify-content-center gap-2">
+      <button class="btn btn-primary " id="update" (click)="createForm()">update</button> 
+      <button class="btn btn-danger delete" (click)="delete()">delete</button>
+      <br>
+</div>
+

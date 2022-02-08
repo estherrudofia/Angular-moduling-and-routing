@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { FormBuilder } from '@angular/forms';
 import { PostService } from "src/app/services/post.service";
 
 @Component({
@@ -7,22 +8,32 @@ import { PostService } from "src/app/services/post.service";
   styleUrls: ['./section.component.scss']
 })
 export class SectionComponent implements OnInit {
+ 
 
-  constructor(private teapot: PostService) { }
+  constructor(private post: PostService,  ) { }
+ 
 
+  posts: any = [];
 
-  teapots: any = [];
+  
+
 
   ngOnInit(): void {
     this.getSection();
+    // this.updatePost();
   }
 
+
+
   getSection() {
-    this.teapot.get().subscribe(data => {
-      this.teapots = data;
-      console.log(this.teapots);
+    this.post.getPost().subscribe(data => {  
+      this.posts = data;
+      // console.log(this.posts);
       
     })
   }
+
+ 
+
 
 }

@@ -1,34 +1,12 @@
 <div class="d-flex flex-wrap justify-content-center">
-    <div class="card align-items-center" style="width:300px; height:200px" *ngFor="let teapot of teapots">
-        <img class="card-img-top" src={{teapot.image}} alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">{{teapot.title}}</h4>
-          <p class="card-text">{{teapot.paragraph}}</p>
-        </div>
-    </div>
+    
 
-    <div class="card align-items-center" style="width:300px">
-        <img class="card-img-top" src="/assets/images/12.png" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Medium Bruka Teapot</h4>
-          <p class="card-text">Some example text.</p>
-        </div>
-    </div>
-
-    <div class="card align-items-center" style="width:300px">
-        <img class="card-img-top " src="/assets/images/11.png" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text.</p>
-        </div>
-    </div>
-
-    <!-- <div class="card align-items-center" style="width:300px">
-        <img class="card-img-top" src="/assets/images/12.png" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Frangipani</h4>
-          <p class="card-text">Some example text.</p>
-        </div>
-    </div> -->
+    <div class="card align-items-center" style="min-width:250px; min-height:300px" *ngFor="let teapot of teapots">
+      <img class="card-img-top w-50" [src]="teapot.image" alt="Card image">
+      <div class="card-body text-center">
+        <h4 class="card-title">{{teapot.title}}</h4>
+        <p class="card-text text-center">{{teapot.paragraph}}</p>
+      </div>
+  </div>
 
 </div>
